@@ -6,7 +6,7 @@ This configuration will place a demo script and cronjob in a project named "demo
 <table border="0" cellspacing="0" cellpadding="0">
         <tbody>
                 <tr>
-                        <td width="200">
+                        <td>
                                 <b>file</b>
                         </td>
                         <td>
