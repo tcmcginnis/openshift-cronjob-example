@@ -3,7 +3,7 @@ Example configuration to run scripts under Kubernetes cron.
 
 This configuration will place a demo script and cronjob in a project named "demo".<br><br>
 To test, simple create a namespace "demo" and run "ls *.yaml|xargs -l1 oc apply -f" 
-
+<br>
 <table>
         <tbody>
                 <tr>
