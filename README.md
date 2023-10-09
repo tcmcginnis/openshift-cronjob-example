@@ -1,5 +1,5 @@
 # openshift-cronjob-example
-Example configuration to run scripts under Kubernetes cron.
+Example configuration to run scripts under Kubernetes cron and process "oc cli" commands.
 
 This configuration will place a demo script and cronjob in a project named "demo".<br><br>
 
