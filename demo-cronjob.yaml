@@ -1,0 +1,47 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: crondemo
+  namespace: demo
+spec:
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - command:
+            - /bin/bash
+            - -c
+            - /var/run/scripts/demo_script.sh; /bin/sleep 1m
+            env:
+              - name: option_value_from_configmap
+                valueFrom:
+                  configMapKeyRef:
+                    name: demo-options
+                    key: option_value_from_configmap
+            image: registry.redhat.io/openshift4/ose-cli
+            name: crondemo
+            resources: {}
+            volumeMounts:
+            - mountPath: /var/run/scripts
+              name: script-volume
+            - mountPath: /var/tmp/data
+              name: demo-data
+          envFrom:
+            - configMapRef:
+                name: demo-options
+          restartPolicy: OnFailure
+          serviceAccount: svc-demo-crontab
+          serviceAccountName: svc-demo-crontab
+          volumes:
+          - configMap:
+              defaultMode: 0755
+              name: demo-script
+            name: script-volume
+          - configMap:
+              defaultMode: 0420
+              name: demo-data
+            name: demo-data
+  schedule: '* * * * *'

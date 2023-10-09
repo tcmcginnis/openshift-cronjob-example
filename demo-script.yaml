@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-script
+  namespace: demo
+data:
+  demo_script.sh: |
+    #
+    # This is a demo script for crontab example
+    #
+    #!/bin/bash
+    echo "Running script located in: $0"
+    echo ""
+    echo "option_value_from_configmap is set to \"$option_value_from_configmap\"."
+    date
+    set -x
+    oc whoami
+    oc get nodes
+

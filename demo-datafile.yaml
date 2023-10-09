@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-data
+  namespace: demo
+data:
+  demo_data: |
+    #
+    # This is a demo data file
+    #

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-options
+data:
+  option_value_from_configmap: "This is from the ConfigMap"
+
