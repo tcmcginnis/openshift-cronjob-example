@@ -13,6 +13,7 @@ This configuration will place a demo script and cronjob in a project named "demo
                         <td width="240">
                                 <b>Description</b>
                         </td>
+                </tr>
 
 <tr><td></td> demo-cronjob.yaml</td>- Cronjob definition</tr>
 <tr><td></td> demo-datafile.yaml   </td>-<td> Example datafile to map to the cronjob</tr>
