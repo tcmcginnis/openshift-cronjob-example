@@ -6,6 +6,7 @@ metadata:
 spec:
   concurrencyPolicy: Forbid
   failedJobsHistoryLimit: 1
+  successfulJobsHistoryLimit: 5
   jobTemplate:
     spec:
       template:
@@ -45,4 +46,3 @@ spec:
               name: demo-data
             name: demo-data
   schedule: '* * * * *'
-  successfulJobsHistoryLimit: 5
