@@ -45,3 +45,4 @@ spec:
               name: demo-data
             name: demo-data
   schedule: '* * * * *'
+  successfulJobsHistoryLimit: 5
