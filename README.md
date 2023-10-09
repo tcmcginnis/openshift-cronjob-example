@@ -9,7 +9,7 @@ This configuration will place a demo script and cronjob in a project named "demo
 </font></font></b></p>
 
 <p></p><table border="0" cellspacing="0" cellpadding="0"><tbody>
-<tr><td><b>file</b></td><td><b>Description</b></td></tr>
+<tr><td><b>File</b></td><td><b>Description</b></td></tr>
 <tr><td> demo-cronjob.yaml    </td>-<td> Cronjob definition                                     </td></tr>
 <tr><td> demo-datafile.yaml   </td>-<td> Example datafile to map to the cronjob                 </td></tr>
 <tr><td> demo-options.yaml    </td>-<td> Example environment variables to expose to the cronjob </td></tr>
