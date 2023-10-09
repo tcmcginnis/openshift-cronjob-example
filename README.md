@@ -15,9 +15,10 @@ This configuration will place a demo script and cronjob in a project named "demo
                         </td>
 
 <tr><td></td> demo-cronjob.yaml</td>- Cronjob definition</tr>
-<tr><td></td> demo-datafile.yaml   </td>- Example datafile to map to the cronjob<br>
-<tr><td></td> demo-options.yaml    </td>- Example environment variables to expose to the cronjob<br>
-<tr><td></td> demo-script.yaml     </td>- The script being mounted and run from the cronjob<br>
-<tr><td></td> svc-demo-crontab.yaml</td>- Service Account definition for running OC CLI commands<br>
-<tr><td></td> svc-demo-role.yaml</td>- Role binding for the service account.<br>
+<tr><td></td> demo-datafile.yaml   </td>-<td> Example datafile to map to the cronjob</tr>
+<tr><td></td> demo-options.yaml    </td>-<td> Example environment variables to expose to the cronjob</tr>
+<tr><td></td> demo-script.yaml     </td>-<td> The script being mounted and run from the cronjob</tr>
+<tr><td></td> svc-demo-crontab.yaml</td>-<td> Service Account definition for running OC CLI commands</tr>
+<tr><td></td> svc-demo-role.yaml   </td>-<td> Role binding for the service account.</tr>
+</table>
 
