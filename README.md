@@ -4,9 +4,8 @@ Example configuration to run scripts under Kubernetes cron.
 This configuration will place a demo script and cronjob in a project named "demo".
 
 
-demo-cronjob.yaml	- Cronjob definition
-
-demo-datafile.yaml	- Example datafile to map to the cronjob
+demo-cronjob.yaml	- Cronjob definition<br>
+demo-datafile.yaml	- Example datafile to map to the cronjob<br>
 
 demo-options.yaml	- Example environment variables to expose to the cronjob
 
